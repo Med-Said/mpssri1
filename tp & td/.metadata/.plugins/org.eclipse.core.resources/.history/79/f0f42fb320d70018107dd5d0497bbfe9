@@ -1,0 +1,7 @@
+package expose;
+
+public class Enseignant extends Personne{
+	private String matiere;
+	private short nbrClasse;
+	private short nbrHoraire;
+}

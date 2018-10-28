@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="expose.Personne"/>
+<fullyQualifiedTypeName name="expose.Enseignant"/>
+<fullyQualifiedTypeName name="expose.Etudiant"/>
+<fullyQualifiedTypeName name="gestionContacts.Moninterface"/>
+<fullyQualifiedTypeName name="gestionContacts.Personne"/>
+</qualifiedTypeNameHistroy>

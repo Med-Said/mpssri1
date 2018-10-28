@@ -1,0 +1,11 @@
+package gestionContacts;
+
+public class TestCarnet {
+	
+	Carnet cr = new Carnet("cr",3);
+	
+	Physique c1 = (Physique) new Physique("c1","rue c1, ..","c1@gmail.com",111111,"fonction1");
+	Physique c2 = (Physique) new Physique("c2","rue c2, ..","c2@gmail.com",22222,"fonction2");
+	
+	cr.
+}

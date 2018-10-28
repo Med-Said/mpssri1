@@ -1,0 +1,31 @@
+package gestionContacts;
+
+// question 3
+
+public  class Groupe implements Moninterface {
+	
+	private String nom;
+	private Personne[] membres;
+	private int max;
+	private int taille;
+	
+	public Groupe(String nom, int taille){
+		this.nom = nom;
+		this.taille = taille;
+	}
+
+	public Personne[] getMembres(){
+		return this.membres;
+	}
+	
+	
+	public boolean ajouter(Object obj){
+		return false;
+	}
+	
+	public int chercher(Object obj){
+		return 0;
+	}
+	
+	
+}

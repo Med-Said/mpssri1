@@ -1,0 +1,13 @@
+package expose;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		Personne p1 = new Personne("Aloui", "Rim");
+		System.out.println(p1.decrit());
+		
+		Etudiant e1 = new Etudiant("Thabti", "Sana");
+		System.out.println(e1.decrit());
+	}
+}

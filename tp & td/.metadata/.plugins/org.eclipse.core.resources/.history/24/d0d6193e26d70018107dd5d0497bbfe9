@@ -1,0 +1,29 @@
+package expose;
+
+public class Etudiant extends Personne{
+	private String classe;
+	private String identifiant;
+	
+	
+	public Etudiant(String nom, String prenom){
+		super(nom,prenom);
+	}
+	
+	public Etudiant(String nom, String prenom, String classe, String identifiant){
+		super(nom,prenom);
+		this.classe = classe;
+		this.identifiant = identifiant;
+	}
+	
+	public String decrit(){
+		
+		return "\tEtudiant\n" +  super.decrit();
+		
+	}
+	
+	public String toString(){
+		return "\nsalut : je suis un etudiant"
+				 + super.toString();
+	}
+	
+}

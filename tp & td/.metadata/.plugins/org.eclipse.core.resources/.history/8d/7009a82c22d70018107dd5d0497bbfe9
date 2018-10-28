@@ -1,0 +1,16 @@
+package expose;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		Personne p1 = new Personne();
+		p1.whoIma();
+		
+		Etudiant e1 = new Etudiant();
+		e1.whoIma();
+		
+		Enseignant en1 = new Enseignant();
+		en1.whoIma();
+	}
+}

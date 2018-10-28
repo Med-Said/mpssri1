@@ -1,0 +1,9 @@
+package expose;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		Personne p1 = new Personne("Aloui", "Rim");
+	}
+}

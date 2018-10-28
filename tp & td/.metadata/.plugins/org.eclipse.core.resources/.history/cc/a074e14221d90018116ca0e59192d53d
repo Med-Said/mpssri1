@@ -1,0 +1,36 @@
+package gestionContacts;
+
+public abstract class Personne {
+	private String nom;
+	private String adresse;
+	private String email;
+	private int tel;
+	
+	public Personne(String nom, String adresse, String email, int tel){
+		this.nom = nom;
+		this.adresse = adresse;
+		this.email = email;
+		this.tel = tel;
+	}
+//question 1
+//	@Override
+	public boolean equals(Object obj) {
+		if( obj instanceof Personne ){
+			Personne personne = (Personne) obj;
+			if( this.nom.equals(personne.nom) && this.adresse.equals(personne.adresse) ){
+				return true;
+			}
+		}
+	return false;
+	}
+	
+//	public  String toStirng(){
+//		return "Nom : " + this.nom + "Adresse : " + this.adresse + "E-mail : " + this.email + "Tel : " + this.tel;
+//	}
+	
+	public  abstract String toStirng();
+
+	
+	
+	
+}

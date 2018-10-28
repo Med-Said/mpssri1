@@ -1,0 +1,8 @@
+package gestionContacts;
+
+public interface Moninterface {
+	
+	public abstract boolean ajouter(Object obj);
+	public abstract int chercher(Object obj);
+	
+}

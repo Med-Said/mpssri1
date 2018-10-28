@@ -1,0 +1,9 @@
+package gestionContacts;
+
+public abstract class Personne {
+	private String nom;
+	private String adresse;
+	private String email;
+	private int tel;	
+	
+}

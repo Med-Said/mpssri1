@@ -1,0 +1,26 @@
+package gestionContacts;
+
+public abstract class Personne {
+	private String nom;
+	private String adresse;
+	private String email;
+	private int tel;
+	
+	public Personne(String nom, String adresse, String email, int tel){
+		this.nom = nom;
+		this.adresse = adresse;
+		this.email = email;
+		this.tel = tel;
+	}
+
+//	@Override
+	public boolean equals(Personne personne) {
+		if( this.nom.equals(personne.nom)  && this.adresse.equals(personne.adresse) ){
+			return true;
+		}
+		return false;
+	}
+	
+	
+	
+}

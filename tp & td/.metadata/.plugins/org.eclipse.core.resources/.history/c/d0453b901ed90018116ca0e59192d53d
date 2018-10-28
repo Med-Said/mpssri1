@@ -1,0 +1,69 @@
+package gestionContacts;
+
+// question 3
+
+public  class Groupe implements Moninterface {
+	
+	private String nom;
+	private Personne[] membres;
+	private int max;
+	private int taille;
+	int compteur = 0; //compteur
+	
+	public Groupe(String nom, int taille){
+		this.nom = nom;
+		this.taille = taille;
+		
+	}
+
+	public Personne[] getMembres(){
+		return this.membres;
+	}
+	
+	
+	public boolean ajouter(Object obj){
+		if( obj instanceof Personne && this.compteur < this.taille){
+			membres[compteur] = (Personne) obj;
+			compteur++;
+			return true;
+		}
+		else
+			return false;
+	}
+	
+	public int chercher(Object obj){
+		if(obj instanceof Personne){
+			Personne personne = (Personne) obj;
+			for(int i = 0; i<taille; i++){
+				if(membres[i].equals(personne)){
+					return i;
+				}
+			}
+		}
+		return -1;
+	}
+	
+	public boolean equals(Object obj){
+		return true;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
