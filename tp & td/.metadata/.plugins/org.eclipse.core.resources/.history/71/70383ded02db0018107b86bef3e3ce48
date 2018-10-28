@@ -16,14 +16,17 @@ public class TestCarnet {
 		cr.ajouter(new Groupe("Famille",3));
 		cr.ajouter(new Groupe("Amis du lycee",3));
 //		
-				
+		
+		System.out.println(cr.getGroupes()[1].getNom());
+		
 		cr.getGroupes()[0].ajouter(c1);
-		cr.getGroupes()[0].ajouter(c2);
+		cr.getGroupes()[0].ajouter(c1);
 		cr.getGroupes()[1].ajouter(c2);
 //		
 //		
-		System.out.println("la position du personne 1 dans groupe Faille : " + cr.getGroupes()[0].chercher(c1));
-		System.out.println(cr.getGroupes()[0].toString());
+		System.out.println(cr.getGroupes()[0].chercher(c1));
+		System.out.println(cr.getGroupes()[0].compteur);
+		System.out.println(cr.getGroupes()[1].chercher(c2));		
 		
 	}
 }

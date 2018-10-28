@@ -70,14 +70,14 @@ public  class Groupe implements Moninterface {
 	public String toString() {
 		
 		//recuperation des information  des membres du groupe,
-		String pers  = "";//les informatin des personnes.
+		String pers  = "";
 		for(int i =0; i < compteur; i++){
 			 pers += "Information du membre " + i + ":\nNom : " + this.membres[i].getNom()
 					+ "\nEmail : " + this.membres[i].getEmail() + "\nAdresse : " + this.membres[i].getAdresse()
 					+ "\nTel : " + this.membres[i].getTel() + "\n\n";
 		}
 		
-		return "Nom du Groupe : " + nom + "\ntaille : " + taille + "\n\nNombre de membres : " + compteur + "\n" + pers;
+		return "Nom du Groupe : " + nom + "\ntaille : " + taille + "\nNombre de membres : " + compteur;
 		
 	}
 	

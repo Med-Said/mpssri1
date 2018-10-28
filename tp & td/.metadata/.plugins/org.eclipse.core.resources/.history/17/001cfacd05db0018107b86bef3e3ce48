@@ -22,7 +22,7 @@ public class TestCarnet {
 		cr.getGroupes()[1].ajouter(c2);
 //		
 //		
-		System.out.println("la position du personne 1 dans groupe Faille : " + cr.getGroupes()[0].chercher(c1));
+		System.out.println(cr.getGroupes()[0].chercher(c1));
 		System.out.println(cr.getGroupes()[0].toString());
 		
 	}
