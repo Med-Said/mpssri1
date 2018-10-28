@@ -1,0 +1,21 @@
+package partie2;
+
+public class TestFact {
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+	public float fact(int n){
+		if(n ==0 || n ==1){
+			System.out.println(n+"! = " + n);
+			return n;
+		}
+			
+		else {
+			System.out.println(n+"! = " + n*(fact(n-1)));
+			return n*(fact(n-1));
+		}				
+	}
+}
