@@ -5,18 +5,6 @@ package gestionContacts;
 public  class Groupe implements Moninterface {
 	
 	private String nom;
-	public String getNom() {
-		return nom;
-	}
-
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
-
-	public void setMembres(Personne[] membres) {
-		this.membres = membres;
-	}
-
 	private Personne[] membres;
 	public int taille;
 	public int compteur = 0; //compteur
@@ -24,6 +12,7 @@ public  class Groupe implements Moninterface {
 	public Groupe(String nom, int taille){
 		this.nom = nom;
 		this.taille = taille;
+		membres = new Personne[taille];
 		
 	}
 
@@ -31,10 +20,9 @@ public  class Groupe implements Moninterface {
 		return this.membres;
 	}
 	
-	
 	public boolean ajouter(Object obj){
-		if( obj instanceof Personne && this.compteur < this.taille){
-			membres[compteur-1] = (Personne) obj;
+		if( obj instanceof Personne && this.compteur < this.taille && obj != null){
+			membres[compteur] = (Personne) obj;
 			compteur++;
 			return true;
 		}
@@ -55,7 +43,7 @@ public  class Groupe implements Moninterface {
 	}
 	
 	public boolean equals(Object obj){
-		if(obj instanceof Groupe){
+		if(obj instanceof Groupe && obj != null){
 			Groupe groupe = (Groupe) obj;
 			if(this.nom.equals(groupe.nom))
 				return true;
@@ -64,12 +52,17 @@ public  class Groupe implements Moninterface {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public void setMembres(Personne[] membres) {
+		this.membres = membres;
+	}
 	
 	
 	
