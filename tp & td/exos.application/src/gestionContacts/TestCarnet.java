@@ -11,19 +11,19 @@ public class TestCarnet {
 		Physique c1 = (Physique) new Physique("c1","rue c1, ..","c1@gmail.com",111111,"fonction1");
 		Physique c2 = (Physique) new Physique("c2","rue c2, ..","c2@gmail.com",22222,"fonction2");
 		
+		
+
 		cr.ajouter(new Groupe("Famille",3));
 		cr.ajouter(new Groupe("Amis du lycee",3));
-		
+//		
 		cr.getGroupes()[0].ajouter(c1);
 		cr.getGroupes()[0].ajouter(c1);
 		cr.getGroupes()[1].ajouter(c2);
-		
-		
-		cr.getGroupes()[0].chercher(c1);
-		
-		cr.getGroupes()[0].chercher(c1);
-		cr.getGroupes()[1].chercher(c2);
+//		
+//		
+		System.out.println(cr.getGroupes()[0].taille);
+		System.out.println(cr.getGroupes()[0].compteur);
+		System.out.println(cr.getGroupes()[1].chercher(c2));		
 		
 	}
-	
 }

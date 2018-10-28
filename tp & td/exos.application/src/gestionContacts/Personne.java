@@ -22,7 +22,7 @@ public abstract class Personne {
 //question 1
 //	@Override
 	public boolean equals(Object obj) {
-		if( obj instanceof Personne ){
+		if( obj instanceof Personne && obj != null){
 			Personne personne = (Personne) obj;
 			if( this.nom.equals(personne.nom) && this.adresse.equals(personne.adresse) ){
 				return true;
