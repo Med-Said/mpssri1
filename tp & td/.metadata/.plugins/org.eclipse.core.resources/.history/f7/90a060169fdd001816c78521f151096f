@@ -1,0 +1,13 @@
+package exoG2;
+
+public class Personne {
+	protected String nom;
+	
+	public Personne(String nom){
+		this.nom = nom;
+	}
+	
+	public void affiche(){
+		System.out.println("Je suis " + nom + " le ");
+	}
+}

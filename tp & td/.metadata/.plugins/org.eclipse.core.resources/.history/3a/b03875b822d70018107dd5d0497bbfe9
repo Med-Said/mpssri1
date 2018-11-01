@@ -1,6 +1,0 @@
-package expose;
-
-public class Etudiant extends Personne{
-	private String classe;
-	private String identifiant;
-}

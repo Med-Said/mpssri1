@@ -1,6 +1,0 @@
-package expose;
-
-public class Personnel extends Personne{
-
-
-}
