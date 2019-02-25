@@ -44,14 +44,6 @@ affich()
 
 
 #déchiffrement (avec connaissance de a & b)
-    
-#Plus Grand Commun Diviseur
-def pgcd(a,b):
-    if b==0:
-        return a
-    else:
-        r=a%b
-        return pgcd(b,r)
 
 #aMoinUn c'est le modulo inverse du a (1=a*aMoinUn mod 26)
 
